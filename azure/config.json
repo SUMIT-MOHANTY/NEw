@@ -1,0 +1,21 @@
+{
+  "appName": "calcapp-sandbox",
+  "resourceGroup": "calcapp-rg-sandbox",
+  "slot": "staging",
+  "runtime": "NODETHON|20-linux",
+  "region": "eastus",
+  "sku": {
+    "name": "B1",
+    "tier": "Basic"
+  },
+  "environment": "sandbox",
+  "deployment": {
+    "type": "github-actions",
+    "workflow": ".github/workflows/deploy.yml"
+  },
+  "appSettings": {
+    "NODE_ENV": "production",
+    "PORT": "3000",
+    "DATABASE_PATH": "/home/site/db/calcapp.db"
+  }
+}

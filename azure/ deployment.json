@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.azure.com/schemas/2019-08-01/publishprofile.json",
+  "publishMethod": "MSDeploy",
+  "publishProfile": {
+    "publishUrl": "https://calcapp-sandbox.scm.azurewebsites.net/calcapp-sandbox",
+    "msdeploySiteUrl": "https://calcapp-sandbox.scm.azurewebsites.net",
+    "userPWDKey": "PLACEHOLDER_PASSWORD_KEY",
+    "userName": "$calcapp-sandbox",
+    "destinationAppUrl": "https://calcapp-sandbox.azurewebsites.net",
+    "SQLServerDBConnectionString": "",
+    "mySQLDBConnectionString": "",
+    "edition": "",
+    "size": "",
+    "location": "East US",
+    "publishMode": "Auto",
+    "subscriptionId": "PLACEHOLDER_SUBSCRIPTION_ID",
+    "resourceGroup": "calcapp-rg-sandbox"
+  },
+  "note": "Replace with actual publish profile from Azure Portal. Get from: App Service -> Deployment Center -> Manual deployment (or GitHub Actions)"
+}
