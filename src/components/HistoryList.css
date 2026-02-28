@@ -1,0 +1,74 @@
+.history-list {
+  max-width: 400px;
+  padding: 16px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.history-list__title {
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+  color: #333;
+}
+
+.history-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-list__item {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.history-list__item:last-child {
+  border-bottom: none;
+}
+
+.history-list__expression {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.history-list__result {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.history-list__timestamp {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.history-list__loading,
+.history-list__error,
+.history-list__empty {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.history-list__error {
+  color: #d32f2f;
+}
+
+@media (min-width: 320px) {
+  .history-list {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .history-list {
+    max-width: 400px;
+    padding: 16px;
+  }
+}
